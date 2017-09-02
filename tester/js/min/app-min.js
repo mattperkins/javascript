@@ -1,0 +1,1 @@
+function showSize(){var e=window.innerWidth;document.getElementById("size").innerHTML="W: "+e}showSize();var colours=["red","blue","green"];console.log(colours[0]);

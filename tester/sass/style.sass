@@ -1,0 +1,44 @@
+@import style-baselines
+// LET THERE BE JUSTICE
+// size 
+#size
+  position: absolute
+  top: 0
+  right: 7px
+  +meri(1, 100, 1.6, $notBlack)
+//
+$reset-font:          $neue, sans-serif
+$reset-font-size:     62.5%
+$reset-line-height:   1.625
+$reset-margin:        0 // 2.4rem golden ratio for descendants 
+$reset-padding:       0 // 4.8rem golden ratio for descendants
+html
+  font-size:    $reset-font-size
+  @media only screen and (min-width: 800px)
+    font-size: 80%
+  @media only screen and (min-width: 1100px)
+    font-size: 90%
+  @media only screen and (min-width: 1600px)
+    font-size: 100%
+body
+  font-size:    3.6em
+  +break(400px)
+    font-size: 2em
+  line-height:  $reset-line-height
+  font-family:  $reset-font
+  margin:       $reset-margin
+  padding:      $reset-padding
+
+  height: 100vh
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  
+  +break(1100px)
+    background-color: red
+  +break(400px)
+    background-color: blue
+// LET THERE BE LIGHT
+
+  
